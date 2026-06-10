@@ -1,0 +1,15 @@
+#button-inicio{
+    text-align: center;
+   
+}
+#formulario{
+    align-items: center;
+    background-color: rgb(235, 239, 243);
+    margin: 110px
+}
+input{
+    margin-left: 70px;
+}
+#olvidaste{
+    margin-left: 80px;
+}
