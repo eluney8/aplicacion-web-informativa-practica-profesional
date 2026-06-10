@@ -51,31 +51,78 @@
       <main>
         <section>
           <h1 class="text-center p-4 mt-3">Registrate</h1>
-          <form class="bg-secondary">
+          <form class="bg-secondary p-5">
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Gmail:</label>
+              <label for="nombreRegist" class="form-label">Nombre:</label>
+              <input
+                type="text"
+                id="nombreRegist"
+                class="form-control"
+                placeholder="Ingrese su nombre."
+              />
+            </div>
+            <div class="mb-3">
+              <label for="apellidoRegist" class="form-label">Apellido:</label>
+              <input
+                type="text"
+                id="apellidoRegist"
+                class="form-control"
+                placeholder="Ingrese su apellido."
+              />
+            </div>
+            <div class="mb-3">
+              <label for="usuarioRegist" class="form-label"
+                >Nombre de usuario:</label
+              >
+              <input
+                type="text"
+                id="usuarioRegist"
+                class="form-control"
+                placeholder="Cree un nombre usuario único."
+              />
+            </div>
+            <div class="mb-3">
+              <label for="cuilRegist" class="form-label">CUIL:</label>
+              <input
+                type="text"
+                id="cuilRegist"
+                class="form-control"
+                placeholder="Ingrese su CUIL."
+              />
+            </div>
+            <div class="mb-3">
+              <label for="emailRegist" class="form-label"
+                >Correo electrónico:</label
+              >
               <input
                 type="email"
                 class="form-control"
-                id="exampleInputEmail1"
+                id="emailRegist"
                 aria-describedby="emailHelp"
               />
-              <div id="emailHelp" class="form-text">
-                We'll never share your email with anyone else.
-              </div>
             </div>
             <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label"
+              <label for="contraseñaRegist" class="form-label"
                 >Contraseña:</label
               >
               <input
                 type="password"
                 class="form-control"
-                id="exampleInputPassword1"
+                id="contraseñaRegist"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="contraseñaVerificacionRegist" class="form-label"
+                >Repetir contraseña:</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="contraseñaVerificacionRegist"
               />
             </div>
 
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Guardar</button>
           </form>
         </section>
       </main>
