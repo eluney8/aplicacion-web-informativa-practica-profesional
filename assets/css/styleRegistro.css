@@ -1,0 +1,13 @@
+body {
+  text-align: justify;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-image: url("../img/fondo-pagina.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.fondo_base {
+  background-color: #8cabf0c0;
+}
