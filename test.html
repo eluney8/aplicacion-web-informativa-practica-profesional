@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Vocacional Formosa</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/test.css" />
+  </head>
+  <body class="bg-light py-5">
+    <main class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <!-- Tarjeta Principal del Test -->
+          <div class="card shadow-sm border-0 p-4 rounded-4 bg-white">
+            <header class="text-center mb-4 pb-3 border-bottom">
+              <h1 class="h2 text-primary fw-bold">Test Vocacional Formosa</h1>
+              <p class="text-muted mb-0">
+                Descubre tu carrera ideal y dónde estudiarla en la provincia.
+              </p>
+            </header>
+
+            <!-- Formulario del Test -->
+            <section id="quiz-section">
+              <form id="vocational-form">
+                <!-- Las preguntas se inyectarán aquí con JavaScript -->
+                <div id="questions-container"></div>
+
+                <button
+                  type="button"
+                  id="btn-submit"
+                  class="btn btn-success w-100 py-3 fw-bold mt-3 shadow-sm"
+                  onclick="calcularResultado()"
+                >
+                  Ver mi carrera ideal
+                </button>
+              </form>
+            </section>
+
+            <!-- Sección de Resultados (Oculta al principio) -->
+            <section id="result-section" class="d-none text-center">
+              <div
+                class="alert alert-success border-0 shadow-sm p-4 rounded-3 mb-4"
+              >
+                <h2 class="h4 fw-bold mb-3 text-success">
+                  ¡Perfil Encontrado!
+                </h2>
+                <p class="mb-1 text-muted">Tu área ideal es:</p>
+                <h3
+                  id="carrera-resultado"
+                  class="h3 fw-bold text-dark my-3"
+                ></h3>
+
+                <hr class="my-3 text-success opacity-25" />
+
+                <p class="mb-2 text-start text-dark">
+                  <strong>Dónde estudiar en Formosa:</strong>
+                </p>
+                <p
+                  id="universidad-resultado"
+                  class="text-start text-muted mb-0"
+                ></p>
+              </div>
+              <button
+                class="btn btn-outline-primary w-100 py-2 fw-bold"
+                onclick="reiniciarTest()"
+              >
+                Hacer el test de nuevo
+              </button>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- JS de Bootstrap 5 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/css/js/test.js"></script>
+  </body>
+</html>
