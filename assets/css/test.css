@@ -1,4 +1,4 @@
-/* Efecto interactivo para las opciones del test */
+
 .option-label {
     display: block;
     background-color: #f8f9fa;
@@ -9,13 +9,11 @@
     transition: all 0.2s ease-in-out;
 }
 
-/* Cambia de color cuando el usuario pasa el mouse sobre la opción */
 .option-label:hover {
     background-color: #e9ecef;
     border-color: #adb5bd;
 }
 
-/* Espaciado personalizado entre preguntas */
 .question-group {
     margin-bottom: 1.8rem;
 }
